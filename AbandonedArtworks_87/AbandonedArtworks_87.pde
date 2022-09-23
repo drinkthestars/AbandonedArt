@@ -24,7 +24,7 @@ PImage bg;
 
 void setup() {
   size(500, 300, P3D);
-  bg = loadImage("wall.jpg");
+  //bg = loadImage("wall.jpg");
   noStroke();
   xstart = random(10);
   ystart = random(10);
@@ -34,7 +34,7 @@ void draw() {
   xstart += 0.05;
   ystart += 0.05;
   background(150);
-  image(bg, 0, 0);
+  //image(bg, 0, 0);
   float ynoise = ystart;
   translate(250, 180, 0);
   for (float y = -40; y <= 40; y+=2) {
@@ -60,4 +60,3 @@ void drawPoint(float x, float y, float noiseFactor) {
   ellipse(0, 0, edgeSize, edgeSize);
   popMatrix();
 }
-
